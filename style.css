@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pblogo{
+    margin-top: 1%;
+    /* margin-left: 5%;  */
+    height: 50px;
+    width: 120px;
+    background-image: url(	https://s3.ap-south-1.amazonaws.com/www.prepbytes.com/navbar/logoPrepBytes.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.dropdown-container{
+     display: flex;
+    width: 100%;
+    margin-top: 6px;
+    margin-left: 10px;
+    
+
+}
+.btn{
+    /* width:200px; */
+    /* height:50px; */
+    margin: 40px;
+    margin-top: 4%;
+    /* border: 1px solid black; */
+}
+
+.account{
+    margin-top: 2.5%;
+    margin-right: 5%;
+    width: 210px;
+    display: flex;
+    justify-content: space-between;
+}
+.btn2{
+    background-color: rgb(12, 176, 241);
+    border: 1px solid white;
+    border-radius: 8px;
+    width: 60px;
+    height: 30px;
+}
+
+.btn1{
+    background-color: white;
+    border: 1px solid rgb(12, 176, 241);
+    border-radius: 8px;
+    width: 60px;
+    height: 30px;
+    color: rgb(12, 176, 241);
+}
+
+
+/* question 2 */
+
+.gfont{
+   
+    font-family: 'BhuTuka Expanded One', cursive;
+    font-size: 40px;
+    font-weight: bold;
+    color: rgba(245, 33, 231, 0.854);
+
+}
+/* question 3 */
+.hover{
+    border: 2px solid black;
+    background-color: rgb(233, 161, 90);
+    height: 200px;
+    width: 300px;
+    margin: 5%;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    
+}
+
+.hover:hover{
+    width:600px;
+     transform: translateX(100px); 
+}
+
+/* question 4 */
+.circle{
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: fuchsia;
+    display: flex;
+    justify-content: center;
+}
+.ccenter{
+    margin-top: 140px;
+    font-size: 30px;
+}
+
+/* question 6 */
+
+.animation{
+    margin-left: 50px;
+    width: 150px;
+    height: 150px;
+    /* position: relative; */
+    /* border: 1px solid black; */
+    background-color: tomato;
+    transition-property: all;
+    animation: animation 5s linear infinite;
+     
+}
+
+
+    
+    @keyframes animation {
+        from{
+       
+        /* transform: rotateZ(360deg); */
+    }
+        to{
+        
+            transform: translateX(500px);
+        }
+
+        50%{
+            background-color: blue;
+            transform: rotateZ(360deg);
+        }
+        100%{
+            background-color: darkgreen;
+            border-radius: 50%;
+        }
+    }
+
+
+
+
+
+/* question 5 */
+
+@media (min-width:360px) and (max-width:720px){
+    .navbar{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .account {
+        margin-top: -2%;
+        margin-left: 40px;
+        width: 150px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn{
+        margin: 10px
+    }
+}
+
+
+
+
